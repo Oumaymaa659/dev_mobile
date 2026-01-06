@@ -17,7 +17,7 @@ L'architecture est divisée en deux parties :
 
 ## Démo
 
-[Voir la vidéo de démonstration](media/demo.mp4)
+[Voir/Télécharger la vidéo de démonstration (Raw)](https://github.com/Oumaymaa659/dev_mobile/raw/main/media/demo.mp4)
 
 ## Installation
 ### Backend
