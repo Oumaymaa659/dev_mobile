@@ -15,7 +15,7 @@ L'architecture est divisée en deux parties :
 - Authentification utilisateur
 - Dashboard administrateur (Backend)
 
-## Démo
+## Démontration de notre application mobile ( vous devez le télécharger )
 
 [Voir/Télécharger la vidéo de démonstration (Raw)](https://github.com/Oumaymaa659/dev_mobile/raw/main/media/demo.mp4)
 
