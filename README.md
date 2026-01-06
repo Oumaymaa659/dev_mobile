@@ -15,6 +15,9 @@ L'architecture est divisée en deux parties :
 - Authentification utilisateur
 - Dashboard administrateur (Backend)
 
+## Documentation
+[Consulter le Cahier de Charge (PDF)](docs/Cahier_de_charge.pdf)
+
 ## Démo
 
 [Voir/Télécharger la vidéo de démonstration (Raw)](https://github.com/Oumaymaa659/dev_mobile/raw/main/media/demo.mp4)
