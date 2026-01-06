@@ -16,10 +16,8 @@ L'architecture est divisée en deux parties :
 - Dashboard administrateur (Backend)
 
 ## Démo
-> [!NOTE]
-> Une vidéo de démonstration sera ajoutée prochainement.
 
-[Espace réservé pour la vidéo]
+https://github.com/user-attachments/assets/94176465-9a8d-4cb5-8208-8e6d6d8d9b13
 
 ## Installation
 ### Backend
