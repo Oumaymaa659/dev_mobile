@@ -17,7 +17,7 @@ L'architecture est divisée en deux parties :
 
 ## Démo
 
-https://github.com/user-attachments/assets/94176465-9a8d-4cb5-8208-8e6d6d8d9b13
+[Voir la vidéo de démonstration](media/demo.mp4)
 
 ## Installation
 ### Backend
