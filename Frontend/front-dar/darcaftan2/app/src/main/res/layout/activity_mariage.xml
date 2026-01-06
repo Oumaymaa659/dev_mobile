@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Bouton retour -->
+        <ImageButton
+            android:id="@+id/btn_retour"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/fleche"
+            android:contentDescription="Retour"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Logo et titre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo_caftan"
+                android:contentDescription="Logo Dar Caftan"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAR CAFTAN"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dark"
+                android:layout_marginTop="12dp" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@color/primary_gold"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collection Mariage"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collections · Mariage"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Découvrez notre collection exclusive de caftans de mariage, créés avec un savoir-faire artisanal d'exception. Chaque pièce est soigneusement brodée à la main avec des fils précieux et des ornements raffinés, pour sublimer votre élégance lors de vos plus beaux moments."
+            android:textSize="16sp"
+            android:textColor="@color/text_dark"
+            android:lineSpacingExtra="6dp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Grille images -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="260dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:background="@color/white"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img_caftan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/caftan1"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="260dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:background="@color/white"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img_caftan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/caftan2"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="260dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:background="@color/white"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img_caftan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/caftan3"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="260dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:background="@color/white"
+                android:elevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img_caftan4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/caftan4"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Section Sur Mesure -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary_gold"
+            android:padding="24dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Création Sur-Mesure"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chaque caftan est conçu selon vos mensurations et vos préférences. Prenez rendez-vous avec notre atelier pour une création unique."
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/img_caftan5"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/caftan5"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

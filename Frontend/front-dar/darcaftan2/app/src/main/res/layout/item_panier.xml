@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/img_caftan"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop"
+        android:background="#DDD"
+        android:layout_marginRight="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_nom_caftan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom du Caftan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#6D4C41" />
+
+        <TextView
+            android:id="@+id/text_prix_caftan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix : 1500 DH"
+            android:textSize="15sp"
+            android:textColor="#A67C52"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/text_taille_caftan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taille : M"
+            android:textSize="15sp"
+            android:textColor="#A67C52"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetEnd="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <ImageButton
+                        android:id="@+id/icon_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:contentDescription="Rechercher" />
+
+                    <LinearLayout
+                        android:id="@+id/center_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/logo_caftan"
+                            android:contentDescription="Logo La Maison du Caftan by DAK"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAR AL KAFTAN"
+                            android:textSize="14sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="8dp">
+
+                        <ImageButton
+                            android:id="@+id/icon_profile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:padding="0dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:contentDescription="Profil" />
+
+                        <ImageButton
+                            android:id="@+id/icon_cart"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="fitCenter"
+                            android:padding="0dp"
+                            android:src="@drawable/ic_shopping_bag_black_24dp"
+                            android:contentDescription="Panier" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_vertical">
+
+                    <TextView style="@style/NavTextItem"
+                        android:text="Accueil"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/NavTextItem"
+                        android:text="Collections ▼"
+                        android:id="@+id/nav_collections" />
+
+
+
+
+                    <TextView style="@style/NavTextItem"
+                        android:text="Notre Histoire"
+                        android:id="@+id/nav_historique"/>
+
+
+                    <TextView
+                        style="@style/NavTextItem"
+                        android:text="Contact"
+                        android:id="@+id/nav_contact"/>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <VideoView
+                android:id="@+id/video_player"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_arrow_back"
+                    android:contentDescription="Couturière en train de prendre des mesures" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@android:color/black"
+                    android:padding="4dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L'UNIVERS DAR AL KAFTAN"
+                        android:textColor="#AAAAAA"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Behind the Thread"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plongez dans l'univers Dar Al Kaftan, où chaque fil raconte une histoire. Entre héritage marocain, artisanat d'exception et inspirations contemporaines, nos créations célèbrent la féminité et le savoir-faire intemporel."
+                        android:textColor="#CCCCCC"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <Button
+                        android:id="@+id/btn_discover_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Découvrir Notre Histoire"
+                        android:backgroundTint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_marginTop="0dp"  style="@style/Widget.AppCompat.Button.Borderless" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imm"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Mosaïque de caftans" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:background="#99000000"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:paddingTop="48dp"
+                    android:paddingBottom="48dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REJOIGNEZ L'UNIVERS DAR AL KAFTAN"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_social_handle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="180dp"
+                        android:background="@android:color/white"
+                        android:text="dar_kaftan"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textStyle="bold"
+                        android:focusable="false"
+                        android:clickable="true" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

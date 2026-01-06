@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- En-tête luxueux avec titre DAR CAFTAN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <!-- Bouton retour -->
+            <ImageButton
+                android:id="@+id/btn_retour"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/fleche"
+                android:contentDescription="Retour"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Logo et titre DAR CAFTAN -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo_caftan"
+                    android:contentDescription="Logo Dar Al Kaftan"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAR CAFTAN"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="12dp" />
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="2dp"
+                    android:background="@color/primary_gold"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Sous-titre élégant -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maison de Haute Couture Marocaine"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontStyle="italic" />
+        </LinearLayout>
+
+        <!-- Contenu principal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Section Introduction -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notre Histoire"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dark"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La Maison du Caftan Marrakech œuvre avant tout à la durabilité du savoir-faire ancestral dans la pratique du commerce équitable."
+                android:textSize="16sp"
+                android:textColor="@color/text_dark"
+                android:lineSpacingExtra="6dp"
+                android:gravity="center"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Image du magasin avec description -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:elevation="4dp"
+                android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:src="@drawable/capture5"
+            android:scaleType="centerCrop"
+                    android:contentDescription="Boutique Dar Al Kaftan" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:background="#CC000000"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notre Boutique"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                        android:text="Découvrez notre espace dédié à l'excellence de la haute couture marocaine"
+                        android:textSize="14sp"
+                        android:textColor="#E0E0E0"
+                        android:lineSpacingExtra="2dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Vidéos côte à côte avec descriptions -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nos Créations en Mouvement"
+            android:textSize="24sp"
+            android:textStyle="bold"
+                android:textColor="@color/primary_gold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <!-- Vidéo 1 avec description -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/white"
+                    android:elevation="4dp">
+
+                    <VideoView
+                        android:id="@+id/video_historique_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Savoir-Faire Artisanal"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_dark"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Découvrez les techniques ancestrales de broderie et de confection"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_gray"
+                            android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Vidéo 2 avec description -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/white"
+                    android:elevation="4dp">
+
+                    <VideoView
+                        android:id="@+id/video_historique_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collections Exclusives"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_dark"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Explorez nos créations uniques alliant tradition et modernité"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_gray"
+                            android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Section Fondatrice -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notre Fondatrice"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_gold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fondée en 2015 par Fatima Alami, une passionnée de mode et d'artisanat marocain, Dar Al Kaftan est née d'un rêve : préserver et moderniser l'art ancestral du caftan marocain."
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fatima Alami, diplômée en Design de Mode de l'École Supérieure des Arts Visuels de Marrakech (ESAV) et titulaire d'un Master en Gestion du Patrimoine Culturel de l'Université Cadi Ayyad, a consacré plus de 15 ans à l'étude des techniques traditionnelles de broderie et de confection marocaines."
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Section Parcours -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Un Parcours d'Excellence"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_gold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avant de créer Dar Al Kaftan, Fatima a travaillé avec les plus grands maîtres artisans de Fès et de Meknès, apprenant les techniques séculaires de la broderie au fil d'or, de la passementerie et de la confection sur-mesure. Elle a également effectué des stages dans des maisons de haute couture à Paris et à Milan, où elle a développé une vision unique alliant tradition et modernité."
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ses études en gestion du patrimoine culturel lui ont permis de comprendre l'importance de la préservation des savoir-faire traditionnels tout en les adaptant aux exigences contemporaines. Elle a également suivi des formations en commerce équitable et en développement durable, valeurs qui sont au cœur de l'éthique de Dar Al Kaftan."
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Section Vision -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notre Vision"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_gold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Depuis 2015, Dar Al Kaftan s'est imposée comme une référence dans l'artisanat de luxe marocain. Notre atelier, situé au cœur de Marrakech, emploie une équipe de 25 artisans qualifiés, dont certains sont des maîtres artisans reconnus dans leur domaine."
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nous créons chaque pièce avec un souci du détail exceptionnel, en utilisant uniquement des matières premières de première qualité : soie naturelle, broderie au fil d'or authentique, perles et sequins sélectionnés avec soin. Chaque caftan est une œuvre d'art unique, fruit de plusieurs semaines de travail artisanal."
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Section Engagement -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notre Engagement"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_gold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dar Al Kaftan s'engage envers l'excellence, l'authenticité et le développement durable. Nous privilégions :"
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• La qualité supérieure et les éléments sur-mesure\n• Une approche éthique et durable de la mode\n• Des conditions de travail sécurisées et équitables pour nos artisans\n• L'approvisionnement local en matières premières\n• L'utilisation de fibres naturelles et de teintures respectueuses de l'environnement\n• La préservation des techniques ancestrales de broderie et de confection"
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Section Reconnaissance -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reconnaissance &amp; Distinctions"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_gold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Au fil des années, Dar Al Kaftan a été reconnue pour son excellence :"
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Prix de l'Artisanat d'Excellence du Maroc (2018)\n• Certification Commerce Équitable (2019)\n• Label &quot;Made in Morocco&quot; de qualité supérieure\n• Partenaire officiel de plusieurs événements de mode internationaux\n• Présence dans les plus prestigieuses collections privées du Maroc et d'Europe"
+                android:textSize="15sp"
+                android:textColor="@color/text_medium"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Section Galerie de Caftans -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Découvrez Nos Créations"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_gold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:text="Chaque caftan est une œuvre d'art unique, créée avec passion et savoir-faire"
+            android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Grille de caftans - Première ligne -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:background="@color/white"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/caftan1"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Caftan collection 1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:background="#CC000000"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Printemps"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:background="@color/white"
+                    android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+            android:src="@drawable/caftan2"
+            android:scaleType="centerCrop"
+                        android:contentDescription="Caftan collection 2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:background="#CC000000"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Été"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- Grille de caftans - Deuxième ligne -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:background="@color/white"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/caftan3"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Caftan collection 3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:background="#CC000000"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Automne"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:background="@color/white"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/caftan4"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Caftan collection 4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:background="#CC000000"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Hiver"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- Grille de caftans - Troisième ligne -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="32dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:background="@color/white"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imm"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Collection caftans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:background="#CC000000"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Exclusive"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:background="@color/white"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/caftan1"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Caftan collection 5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:background="#CC000000"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Sur-Mesure"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- Section Contact -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/primary_gold"
+                android:padding="32dp"
+                android:elevation="8dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visitez Notre Atelier"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nous serions ravis de vous accueillir dans notre atelier pour découvrir notre savoir-faire et nos créations exclusives."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

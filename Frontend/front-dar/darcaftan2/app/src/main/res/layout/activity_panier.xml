@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8F2"
+    android:padding="20dp">
+
+    <!-- Bouton retour -->
+    <ImageButton
+        android:id="@+id/btn_retour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/fleche"
+        android:contentDescription="Retour"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre Panier"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#6D4C41"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Liste des articles réservés -->
+    <ListView
+        android:id="@+id/list_panier"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="8dp"
+        android:divider="@android:color/transparent" />
+
+    <!-- Total -->
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total : 0.00 DH"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#6D4C41"
+        android:gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Bouton Confirmer -->
+    <Button
+        android:id="@+id/btn_confirmer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Confirmer la réservation"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#B27B48"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

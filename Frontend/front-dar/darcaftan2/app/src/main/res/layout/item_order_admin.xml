@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- En-tête avec ID et statut -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/text_order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Commande #123"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A237E"/>
+
+            <TextView
+                android:id="@+id/text_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En attente"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:background="#FF9800"
+                android:padding="6dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+        </LinearLayout>
+
+        <!-- Informations client -->
+        <TextView
+            android:id="@+id/text_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client: Nom du client"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Prix total -->
+        <TextView
+            android:id="@+id/text_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix total: 3500 DH"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#43A047"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Dates -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/text_date_debut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Du: 2025-01-01"
+                android:textSize="13sp"
+                android:textColor="#757575"/>
+
+            <TextView
+                android:id="@+id/text_date_fin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Au: 2025-01-05"
+                android:textSize="13sp"
+                android:textColor="#757575"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <!-- Nombre d'articles -->
+        <TextView
+            android:id="@+id/text_items_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Articles: 2"
+            android:textSize="13sp"
+            android:textColor="#757575"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Boutons d'action -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_refuse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Refuser"
+                android:backgroundTint="#D32F2F"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Confirmer"
+                android:backgroundTint="#43A047"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
